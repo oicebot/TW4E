@@ -1,0 +1,391 @@
+/*------------------------------------------------------------------------正文---内容*/
+body{
+	max-width:22cm;
+	min-width:16cm;
+	background-color:#F5F9FD;
+	margin:0.2cm 0.5cm 0.5cm 0.5cm;
+	border:thin solid #191410;
+	padding:0.2cm 0.5cm 0.5cm 0.5cm;
+	font-size:16px;
+	font-family:微软雅黑,楷体_GB2312,tahoma,sans_serif;
+	line-height:1.5;
+
+  scrollbar-base-color:#AFB5BB;
+  scrollbar-face-color:#a0a0a0;
+  scrollbar-highlight-color:#a0a0a0;
+  scrollbar-track-color:#F5F9FD;
+  scrollbar-Shadow-color:#a0a0a0;
+  scrollbar-darkshadow-color:#a0a0a0;
+  scrollbar-3dlight-color:#AFB5BB;
+  scrollbar-arrow-color:#000000;
+}
+/*------------------------------------------------------------------------目录*/
+div.BookContents{
+	width:287px;
+	height:98px;
+	float:center;
+	background:url(../Materials/ContentsTitle.png) no-repeat;
+	padding:12px 0 0 92px;
+	font-weight:bold;
+	font-size:45px;
+	color:white;
+}
+/*------------------------------------------------------------------------章节总标题-*/
+div.BookTitle{
+	width:411px;
+	height:125px;
+	background:url(../Materials/BookTitle.png) no-repeat;
+	margin:0 0 0.2cm -0.5cm;
+	padding:30px 0 0 130px;
+	font-weight:bold;
+	font-size:47px;
+	color:white;
+}
+/*------------------------------------------------------------------------章节标题*/
+div.BookChaperTitle{
+	width:411px;
+	height:65px;
+	background:url(../Materials/ChaperTitle.png) no-repeat;
+	margin:0 0 0.2cm -0.5cm;
+	padding:6px 0 0 40px;
+	font-weight:bold;
+	font-size:40px;
+	color:white;
+}
+/*------------------------------------------------------------------------正文---标题1*/
+h3{
+	margin:5px 0 10px 0;
+	padding:0 0 0 5px;
+	font-weight:bold;
+	font-size:27px;
+	color:#003399;
+}
+/*正文---标题2*/
+h4{  
+	padding:0 0 0 5px;
+	font-weight:bold;
+	font-size:22px;
+	margin:10px 0 10px 0;
+}
+/*------------------------------------------------------------------------种族、职业部分 *italic表示斜体*/
+div.Explains{
+	font-style:italic;
+	font-size:18px;
+}
+
+/*------------------------------------------------------------------------表格---种族特点、职业特色*/
+Table.Traits{
+	width:100%;
+	background-color:#d1dceb;
+	border-style:groove;
+	font-size:16px;
+}
+/*------------------------------------------------------------------------表格---提示*/
+Table.Tips{
+	width:100%;
+	background-color:#e0e0e0;
+	border-color:#d1dceb; 
+	border-style:groove;
+	border-top-width :thin;
+	font:normal normal normal 16px;
+}
+Table.Tips caption{
+	width:100%;
+	background-color:#e0e0e0;
+	padding-left:0.2cm;
+	border-color:#d1dceb; 
+	border-style:groove;
+	border-bottom-style : none;
+	text-align:left;
+	font-weight:bold;
+	font-size:18px;
+}
+/*表格---列表------------------------------------------------------------------------*/
+Table.Lists{
+	width:100%;
+	background-color:#CDCCB3;
+	margin:15px 0 10px 10px;
+	border-left:1px solid grey;
+	border-Right:3px solid grey;
+	border-bottom:3px solid grey;
+	font:normal normal normal 16px;
+}
+table.lists caption{  
+	text-align:left;
+	font-weight:bold;
+	font-size:17px;
+}
+table.lists tr{  
+	background-color:expression((this.rowIndex%2==0)?"#CDCCB3":"#DAD8C6");
+}
+table.lists th{  
+	background:#1b344c;
+	border:none;
+	color:#E7EFF8;
+}
+
+/*表格---天赋------------------------------------------------------------------------*/
+Table.FateCardBorder{  
+	width:550px;
+	border:3px solid #b0c4de;
+	border-top-style : none;
+	font-size:15px;
+}
+Table.FateCardBorder Caption{  
+	border-left:3px solid #b0c4de;
+	border-top:3px solid #b0c4de;
+	border-right:3px solid #b0c4de;
+	border-bottom:1px solid #b0c4de;
+	font-size:18px;
+	text-align:left;
+}
+
+Table.FateCardBorder th{
+	width:4em;
+	border-bottom:1px solid #b0c4de;
+	border-right:1px solid #b0c4de;
+	padding-top:1px;
+	text-align:right;
+}
+Table.FateCardBorder td{
+	border-bottom:1px solid #b0c4de;
+	padding-top:1px;
+}
+	/*魔法物品表格---魔法物品表--*/
+table.Details{
+	width:100%;
+	background-color:#F0F0F0;
+	font-size:16px;
+	border-top:1px solid gray;
+}
+table.Details th{  
+	width:7em;
+	border-bottom:1px solid gray;
+	border-right:1px solid gray;
+	padding-top:1px;
+	text-align:right;
+	vertical-align:text-bottom;
+}
+table.Details td{  
+	border-bottom:1px solid gray;
+}
+
+/*表格---威能------------------------------------------------------------------------*/
+#PowerCard div.PowerCardBorder{  /*威能表格---边框--*/
+	width:520px;
+	margin:10px 0 10px 10px;
+	border-left:1px solid grey;
+	border-Right:3px solid grey;
+	border-bottom:3px solid grey;
+	clear:both;
+}
+
+#PowerCard div.PowerCardAtWill{  
+		/*威能表格---随意威能--*/
+	width:100%;
+	height:34px;
+	background:#609768;
+	color:white;
+}
+#PowerCard div.PowerCardEncounter{  /*威能表格---遭遇威能--*/
+	width:100%;
+	height:34px;
+	background:#660000;
+	color:white;
+}
+#PowerCard div.PowerCardDaily{  /*威能表格---每日威能--*/
+	width:100%;
+	height:34px;
+	background:#3D3D3D;
+	color:white;
+}
+#PowerCard span.PowerName{  
+	padding:5px 0 0 3px;
+	font-weight:bold;
+	font-size:17px;
+	float:left;
+}
+#PowerCard span.PowerLvl{  
+	padding:5px 3px 0 0;
+
+	font-size:16px;
+	float:right;
+}
+#PowerCard div.PowerExplains{
+	background:#cccccb;
+	padding:2px 0 0 3px;
+	font-style:italic;
+	font-size:15px;
+	text-align:left;
+	word-break:break-all;
+}
+#PowerCard div.Keyword{
+	background-color:white;
+	padding:2px 0 0 4px;
+	font-weight:bold;
+	font-size:16px;
+}
+
+/*表格---魔法物品--------------------------------------------------------------------*/
+
+#ItemCard div.ItemCardBorder{  /*魔法物品表格---边框--*/
+	width:550px;
+	margin:10px 0 10px 10px;
+	border-left:1px solid grey;
+	border-Right:3px solid grey;
+	border-bottom:3px solid grey;
+	clear:both;
+}
+#ItemCard div.ItemCardTitle{
+	width:100%;
+	height:34px;
+	background:#D8941B;
+	color:white;
+}
+#ItemCard span.ItemName{  
+	padding:5px 0 0 3px;float:left;
+	font-weight: bold;
+	font-size:17px;
+}
+#ItemCard span.ItemLvl{  
+	padding:5px 0px 0 0;
+	float:right;
+	font-weight: bold;
+	font-size:16px;
+}
+#ItemCard div.ItemExplains{
+	background:#cccccb;
+	padding:2px 0 0 3px;
+	font-style: italic;
+	font-size:16px;
+	text-align:left;
+	word-break:break-all;
+}
+#ItemCard table.Lv{ /*魔法物品表格---魔法物品表--*/
+	width:100%;
+	border-top:1px solid gray;
+	font-size:16px;
+}
+#ItemCard table.Lv th{  
+	width:3em;
+	border-bottom:1px solid gray;
+	border-right:1px solid gray;
+	padding-top:1px;
+	text-align:right;
+}
+
+/*表格---仪式------------------------------------------------------------------------*/
+#RitualCard div.RitualCardBorder{  /*仪式表格---边框--*/
+	width:550px;
+	border-left:1px solid grey;
+	border-bottom:3px solid grey;
+}
+#RitualCard div.RitualNames{  /*仪式表格---名称--*/
+	 width:100%;
+	 height:34px;
+	 background:#E4E89D;
+	padding:5px 0 0 3px;
+	font-weight: bold;
+	font-size:17px;
+	float:left;
+}
+#RitualCard div.RitualExplains{  
+	width:100%;
+	background:#cccccb;
+	padding:2px 0 0 3px;
+	font-style: italic;
+	font-size:15px;
+	text-align:left;
+	word-break:break-all;
+}
+#RitualCard table.Keywords{  	/*威能表格---威能表--*/
+	width:100%;
+	padding:0 12px 0;
+	font-size:16px;
+}
+#RitualCard div.RitualOthers{  
+	width:100%;
+	background:#D2CEAC;
+	padding:0px 0 0 5px;
+	font-size:15px;
+}
+
+
+/*表格---Monster------------------------------------------------------------------------*/
+#MMCard div.MMCardBorder{    /*Monster表格---边框--*/
+	width:550px;
+	background:#E7E5D4;
+	margin:10px 0 10px 10px;
+	border-left:1px solid grey;
+	border-Right:3px solid grey;
+	border-bottom:3px solid grey;
+}
+
+#MMCard div.MMCardCaption{    /*Monster表格---Monster--*/
+	width:100%;
+	height:27px;
+	background:#4D5B2D;
+	color:white;
+}
+
+#MMCard div.MMCardCaption span.MMName{  
+	padding:2px 0 0 3px;
+	font-weight: bold;
+	font-size:18px;
+	float:left;
+}
+#MMCard div.MMCardCaption span.MMLvl{  
+	padding:2px 3px 0 0;
+	font-weight: bold;
+	font-size:17px;
+	float:right;
+}
+#MMCard div.MMCardCaption span.MMBT{  
+	padding:5px 0 0 2em;
+	font-weight: bold;
+	font-size:12px;
+	position: absolute; left:50px;
+}
+#MMCard div.MMCardCaption span.MMXP{  
+	padding:5px 1.5em 0 0;
+	font-weight: bold;
+	font-size:12px;
+	float:right;
+}
+#MMCard table.Sc{  	/*表--*/
+	width:100%;
+	font-size:15px;
+	border-top:1px solid gray;
+}
+#MMCard table.Sc th{  
+	width:5em;
+	border-bottom:1px solid gray;
+	border-right:1px solid gray;
+	padding-top:1px;
+	text-align:right;
+}
+#MMCard table.Pw{  	/*表--*/
+	width:100%;
+	border-top:1px solid gray;
+	font-size:16px;
+}
+#MMCard table.Pw th{  
+	width:100%;
+	background:#CCCAB5;
+	border-right:1px solid gray;
+	padding-top:1px;
+	text-align:left;
+}
+#MMCard table.Sc2{  	/*表--*/
+	width:100%;
+	background:#CCCAB5;
+	font-size:15px;
+	border-top:1px solid gray;
+}
+#MMCard table.Sc2 th{  
+	width:5em;
+	border-bottom:1px solid gray;
+	border-right:1px solid gray;
+	padding-top:1px;
+	text-align:right;
+}
